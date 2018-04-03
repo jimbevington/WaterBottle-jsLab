@@ -2,8 +2,6 @@
 var assert = require('assert');   // test object from Mocha
 var WaterBottle = require('../water_bottle.js');
 var Athlete = require('../athlete.js');
-var bottle;
-var athlete;
 
 
 describe('Water Bottle', function(){  //  what we're testing
@@ -88,15 +86,6 @@ describe('Athlete', function(){
     assert.strictEqual(athlete.distance, 5);
   })
 
-  // it('can drink from WaterBottle', function(){
-  //   var athlete = new Athlete();
-  //   athlete.waterBottle.fill();
-  //   athlete.drink();
-  //   var waterBottle = athlete.waterBottle;
-  //   assert.strictEqual(waterBottle.volume, 90);
-  //   assert.strictEqual(athlete.hydration, 110);
-  // })
-
   it('can drink from WaterBottle', function(){
     // var athlete = new Athlete();
     var waterBottle = new WaterBottle();
@@ -107,5 +96,3 @@ describe('Athlete', function(){
   })
 
 });
-
-// Use Mocha's beforeEach() to create a new instance of WaterBottle and Athlete before each test.
